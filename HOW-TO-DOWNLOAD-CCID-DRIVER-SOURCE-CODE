@@ -1,0 +1,4 @@
+SOURCE : https://pcsclite.alioth.debian.org/ccid.html
+
+git clone --recursive git://anonscm.debian.org/pcsclite/CCID.git
+

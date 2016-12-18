@@ -1,0 +1,7 @@
+le dossier /usr/local/lib/pcsc/drivers doit contenir les bundle du lecteur exemple:
+	ifd-acsccid.bundle, ifd-ccid.bundle,serial
+LIBCCID_ifdLogLevel=0x000F pcscd --foreground --debug --apdu --color | tee log.txt
+ou
+pcscd -fd
+
+

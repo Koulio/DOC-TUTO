@@ -1,0 +1,13 @@
+### lspci | grep Wireless ---> 02:00.0 Network controller: Realtek Semiconductor Co., Ltd. RTL8723BE PCIe Wireless Network Adapter
+
+### HOW TO INSTALL LINUX DEVICE DRIVER REALTEK RTL8723BE
+
+wget http://elrepo.org/linux/elrepo/el7/x86_64/RPMS/elrepo-release-7.0-2.el7.elrepo.noarch.rpm 
+rpm -Uvh  elrepo-release-7.0-2.el7.elrepo.noarch.rpm 
+yum install kmod-rtl8723be
+service NetworkManager start
+nmcli d
+nmtui  # Activate wireless network of your choice
+iwlist scan
+iwevent
+iwconfig
