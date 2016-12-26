@@ -1,0 +1,2 @@
+ rpm -qa| grep libconfig // indique si le package libconfig est installé
+ rpm -ql libconfig   // donne l'emplacement du package libconfig
